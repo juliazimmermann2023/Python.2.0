@@ -1,0 +1,8 @@
+try:
+
+   a = float (input("coloque um número: "))
+   b = float (input("coloque um outro  número: "))
+except ValueError:
+    print("Tente novamente:")
+print(f"o resultado de {a} e {b} é igual a:{soma}")
+
