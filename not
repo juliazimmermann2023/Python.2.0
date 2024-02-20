@@ -1,0 +1,20 @@
+
+nota = int(input("Digite sua nota: "))
+# Categoriza a idade
+if nota >= 90:
+    categoria = "A"
+    
+elif nota >= 80:
+    categoria = "B"
+    
+elif nota >= 70:
+    categoria = "C"
+    
+elif nota >= 60:
+    categoria = "D"
+    
+elif nota >= 50:
+    categoria = "F"
+    
+# Exibe a categoria
+print(f"Você está na categoria: {categoria}.")
