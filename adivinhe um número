@@ -1,0 +1,25 @@
+import random 
+numero_secreto= random.randint(1,15)
+tentativas= 0
+max_tentativas= 5
+print("Bem-vindo ao jogo de adivinhação!")
+print("tente adivinhar o número que estou pensando de 1 e 10")
+    
+while tentativas < max_tentativas:
+    palpite = int(input("Digite seu palpite:"))
+    tentativas += 1
+    if palpite == numero_secreto:
+        print("Parabéns vc acertou!!")
+        break           
+    elif palpite < numero_secreto:
+        print("Tente um número maior")
+    else:
+        print("Tente um número menor")
+        
+    if tentativas == max_tentativas:
+       print("Vc esgotou seu numero de tentativas")
+       break
+    else:
+        print(f'Voce possui {max_tentativas - tentativas } tentativas')
+        
+print ("Obrigado por jogar- Bjs")   
