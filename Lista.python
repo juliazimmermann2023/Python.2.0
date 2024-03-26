@@ -1,8 +1,3 @@
-**Exercício de Manipulação de Listas em Python**
-
-Aqui está um programa simples em Python que permite ao usuário manipular uma lista. Ele oferece as funcionalidades solicitadas:
-
-```python
 def main():
     minha_lista = []  # Inicializa uma lista vazia
 
