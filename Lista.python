@@ -1,0 +1,40 @@
+**Exercício de Manipulação de Listas em Python**
+
+Aqui está um programa simples em Python que permite ao usuário manipular uma lista. Ele oferece as funcionalidades solicitadas:
+
+```python
+def main():
+    minha_lista = []  # Inicializa uma lista vazia
+
+    while True:
+        print("\nEscolha uma opção:")
+        print("1. Inserir um novo item na lista")
+        print("2. Excluir um item específico da lista")
+        print("3. Mostrar a lista atual")
+        print("4. Sair")
+
+        escolha = input("Digite o número da opção desejada: ")
+
+        if escolha == "1":
+            item = input("Digite o novo item: ")
+            minha_lista.append(item)  # Adiciona o item à lista
+            print(f"{item} foi adicionado à lista.")
+        elif escolha == "2":
+            item = input("Digite o item a ser removido: ")
+            if item in minha_lista:
+                minha_lista.remove(item)  # Remove o item da lista
+                print(f"{item} foi removido da lista.")
+            else:
+                print(f"{item} não está na lista.")
+        elif escolha == "3":
+            print("Lista atual:")
+            for item in minha_lista:
+                print(item)
+        elif escolha == "4":
+            print("Encerrando o programa.")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+if __name__ == "__main__":
+    main()
