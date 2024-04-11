@@ -21,9 +21,10 @@ class ContaBancaria:
 numero_conta = input("Digite o número da conta: ")
 nome_titular = input("Digite o nome do titular da conta: ")
 saldo_inicial = float(input("Digite o saldo inicial da conta: "))
+valor_deposito=float(input("Digite o valor a ser depositado:"). replace(",","."))
+valor_saque=(input("Digite o valor do saque:"))
 
 conta_da_julia = ContaBancaria(numero_conta, nome_titular, saldo_inicial)
 conta_da_julia.deposita(500)
 conta_da_julia.sacar(200)
 conta_da_julia.exibir_detalhes()
-
