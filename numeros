@@ -1,6 +1,5 @@
 try:
-
-   a = float (input("coloque um número: "))
+ a = float (input("coloque um número: "))
    b = float (input("coloque um outro  número: "))
 except ValueError:
     print("Tente novamente:")
