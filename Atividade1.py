@@ -1,37 +1,36 @@
-def soma(x, y):
-    return x + y
+print("OLÁ :)")
+n1 = float(input("Escolha o primeiro número: "))
+n2 = float(input("Escolha o segundo número: "))
 
-def subtracao(x, y):
-    return x - y
-
-def multiplicacao(x, y):
-    return x * y
-
-def divisao(x, y):
-    if y == 0:
-        return "Não é possível dividir por zero!"
-    else:
-        return x / y
-
-print("Escolha a operação:")
+print("Escolha uma opção:")
 print("1 - Soma")
 print("2 - Subtração")
 print("3 - Multiplicação")
 print("4 - Divisão")
+opcao = input("Digite o número do que vc quer fazer: ")
+def soma(n1, n2):
+    return n1 + n2
 
-opcao = input("Digite o número da operação desejada: ")
+def subtracao(n1, n2):
+    return n1 - n2
 
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+def multiplicacao(n1, n2):
+    return n1 * n2
+
+def divisao(n1, n2):
+    if n2 == 0:
+        return "Não é possível dividir por zero!"
+    else:
+        return n1 / n2
 
 if opcao == '1':
-    print("Resultado:", soma(num1, num2))
+    print("Resultado:", soma(n1, n2))
 elif opcao == '2':
-    print("Resultado:", subtracao(num1, num2))
+    print("Resultado:", subtracao(n1, n2))
 elif opcao == '3':
-    print("Resultado:", multiplicacao(num1, num2))
+    print("Resultado:", multiplicacao(n1, n2))
 elif opcao == '4':
-    print("Resultado:", divisao(num1, num2))
+    print("Resultado:", divisao(n1, n2))
 else:
-    print("Opção inválida. Por favor, escolha uma opção válida (1, 2, 3 ou 4).")
+    print("Opção inválida. Escolha uma opção (1, 2, 3 ou 4).")
   
