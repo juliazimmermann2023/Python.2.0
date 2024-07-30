@@ -1,0 +1,9 @@
+def somar_lista(lista):
+    # Usando a função sum() para somar os valores da lista
+    soma = sum(lista)
+    return soma
+
+# Exemplo de utilização
+lista_valores = [10, 20, 30, 40, 50]
+resultado = somar_lista(lista_valores)
+print(f"A soma dos valores da lista é: {resultado}")
