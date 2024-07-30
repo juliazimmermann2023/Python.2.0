@@ -1,14 +1,14 @@
 import math
 
-def calcular_area_circulo(raio):
+def circulo(raio):
     area = math.pi * raio ** 2
     return area
 
-def calcular_area_quadrado(lado):
+def quadrado(lado):
     area = lado ** 2
     return area
 
-def calcular_area_triangulo(base, altura):
+def triangulo(base, altura):
     area = (base * altura) / 2
     return area
 
@@ -17,9 +17,9 @@ lado_quadrado = 4
 base_triangulo = 6
 altura_triangulo = 3
 
-area_circulo = calcular_area_circulo(raio)
-area_quadrado = calcular_area_quadrado(lado_quadrado)
-area_triangulo = calcular_area_triangulo(base_triangulo, altura_triangulo)
+area_circulo = circulo(raio)
+area_quadrado = quadrado(lado_quadrado)
+area_triangulo = triangulo(base_triangulo, altura_triangulo)
 
 print(f'Área do círculo com raio {raio}: {area_circulo:.2f}')
 print(f'Área do quadrado com lado {lado_quadrado}: {area_quadrado}')
