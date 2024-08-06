@@ -12,6 +12,10 @@ red = (255, 0, 0)
 
 circle_x = 5
 circle_y = 5
+Circle_radius = 500
+
+speed_x = 5
+speed_y = 5
 
 running = True
 while running:
@@ -22,14 +26,14 @@ while running:
 circle_x += speed_x
 circle_y += speed_y
 
-if circle_x + circle_radius > screen_width or circle_x - circle_radius < 0:
+if circle_x + Circle_radius > screen_width or circle_x - Circle_radius < 0:
     speed_x = -speed_x
-if circle_y = circle_radius > screen_height or circle_y - circle_radius < 0:
+if circle_y + Circle_radius > screen_height or circle_y - Circle_radius < 0:
     speed_y = -speed_y
 
 screen.fill(white)
 
-pygame.draw.circle(screen, red, (circle_x, circle_y), circle_radius)
+pygame.draw.circle(screen, red, (circle_x, circle_y), Circle_radius)
 
 pygame.display.flip()
 
